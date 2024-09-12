@@ -1,0 +1,141 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #2874f0;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    float: left;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background: #ff9900;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.user-info {
+    float: right;
+    margin-top: 10px;
+}
+
+.user-info a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.user-info a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 20px 0;
+}
+
+.categories {
+   /* Container for category buttons */
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    padding: 10px; /* Space around buttons */
+    justify-content: center; /* Center buttons horizontally */
+  }
+  
+  /* Style for each category button */
+  .category-button {
+    display: inline-block;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #090808; /* Blue color */
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect */
+  .category-button:hover {
+    background-color: #100f0f; /* Darker blue */
+    transform: scale(1.05); /* Slightly larger button on hover */
+  }
+  
+  /* Optional: Add focus styling for accessibility */
+  .category-button:focus {
+    outline: 2px solid #080808; /* Darker blue outline */
+    outline-offset: 2px;
+  }
+
+.product-list h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background: #2874f0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
